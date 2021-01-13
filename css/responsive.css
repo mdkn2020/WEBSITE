@@ -1,0 +1,31 @@
+/* Ipad Layer */
+@media only screen and (min-width:200px) and (max-width:991px) {
+
+    .social_area { max-width: 300px;padding-top: 12px;}
+    #slider_area {margin: 0;}
+    .inner_header h2 {font-size: 55px;}
+    .child_work h2 {font-size: 24px;}
+    .child_service .service_text {width: 70%;}
+    .child_contact {width: 20.5%;}
+}
+@media only screen and (min-width:200px) and (max-width:480px) {
+    .mini_menu {width: 100%;margin-bottom: 10px;}
+    .mini_menu ul,.social_area ul {text-align: center;}
+    .search_area,.logo_area {width: 250px;float: none;margin: 0 auto;}
+    .social_area ul li{margin: 0 5px;}
+    .inner_header img {padding-bottom: 10px;}
+    .inner_header h2 {font-size: 25px;overflow: visible;}
+    .inner_hero{padding-bottom: 20px;}
+    .child_work h2 {padding: 20px 0;}
+    .child_work {width: 100%;margin: 0;}
+    .child_contact {width: 100%;}
+    .child_contact h2 {font-size: 25px; padding: 20px 0 10px;}
+    .child_contact h3 {font-size: 20px;}
+    .child_contact .last_child {font-size: 11px;}
+    .domain {width: 100%;}
+    .templete {text-align: left;;float: left;width: 100%;}
+}
+@media only screen and (min-width:200px) and (max-width:360px){
+    .alignleft{font-size: 50px;}
+    .child_work h2{font-size: 15px;}
+}

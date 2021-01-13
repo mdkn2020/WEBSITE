@@ -1,0 +1,577 @@
+/*======================================= 
+ common css
+ =======================================*/
+body{
+    color: #666666;
+    font-family: Georgia,sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.container{
+   margin: 0 auto;
+   max-width: 960px;
+   width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+a{
+    text-decoration: none;
+}
+.alignleft{
+    float: left;
+    margin-right:15px;
+    margin-bottom: 0;
+}
+.alignright{
+    float: right;
+    margin-left:15px;
+    margin-bottom: 15px;
+}
+.aligncenter{
+    display: block;
+    margin:0 auto 15px;
+}
+/*======================================= 
+ top header Area
+ =======================================*/
+
+ .header_area{
+     width: 100%;
+     clear: both;
+ }
+ #top_header_area{
+     background-color: #ba2e1f;
+     width: 100%;
+     padding: 15px 0;
+ }
+ .inner_top_header{
+    overflow: hidden;
+ }
+.mini_menu{
+    padding-top: 5px;
+    width: 70%;
+    float: left;
+
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+
+}
+.mini_menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+
+}
+.mini_menu ul li::after{
+    background-color: white;
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 1px;
+    top: 6px;
+    right: -10px;
+
+}
+.mini_menu ul li:last-child::after{
+    display: none;
+
+}
+.mini_menu ul li a{
+    display: block;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.mini_menu ul li a:hover{
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+}
+.search_area{
+    width: 30%;
+    float: right;
+    
+}
+.search_area form{
+    background-color: white;
+    border-radius: 25px;
+    float: right;
+    max-width: 210px;
+    width: 96%;
+    padding: 2%;
+    
+}
+.search_area input{
+    color: #000;
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;   
+}
+.search_area form input[type="submit"]{
+    background: url(/img/search.png);
+    background-repeat: no-repeat;
+    width: 20%;
+    background-position: right;
+    cursor: pointer;
+ }
+ /* =======================
+ Main Header Area
+ ========================= */
+ #main_header_area{
+    width: 100%;
+    clear: both;
+}
+.inner_header{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.logo_area{
+    float: left;
+    width: 240px;
+}
+.social_area{
+    padding-top: 20px;
+    float: right;
+    max-width: 600px;
+    width: 100%;
+}
+.social_area ul{
+   margin: 0%;
+   padding: 0;
+   text-align: right;
+   list-style-type: none;
+}
+.social_area ul li{
+   display: inline-block;
+   margin-left: 20px;
+}
+.social_area ul li a{
+   display: block;
+}
+.social_area ul li a i{
+   background: #333333;
+   border-radius: 50%;
+   display: block;
+   text-decoration: none;
+   width: 35px;
+   padding-top: 8px;
+   height: 25px;
+   color: #ffffff;
+   text-align: center;
+   transition: 0.5s;
+}
+.social_area ul li a:hover i{
+   background: #ba2e1f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+   background: #0076B1;
+}
+.social_area ul li a:hover i.fa-twitter{
+   background: #299EE8;
+}
+.social_area ul li a:hover i.fa-pinterest{
+   background: #9A1020; 
+}
+.social_area ul li a:hover i.fa-google-plus-g{
+   background: #E25C4A;
+}
+.social_area ul li a:hover i.fa-rss{
+   background: #ee802f;
+}
+/* =========================
+Main Menu css
+=========================*/
+#main_menu{
+    width: 100%;
+    clear: both;  
+}
+.inner_menu{
+    background: #2b2b2b;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    padding: 15px 0;
+    border-radius: 5px;
+    min-height: 35px;
+    text-align-last: center;
+    position: relative;
+    z-index: 1;
+}
+.inner_menu::after{
+    background-color:#2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+#main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+#main_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px;
+}
+#main_menu ul li a:hover{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover a{
+    color: #ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+    color: #fff;
+}
+/*========================
+Dropdown style 
+=========================*/
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -9999999999px;
+    top: 30px;  
+}
+#main_menu ul li:hover ul{
+    left: 0;
+}
+#main_menu ul li:hover ul ul{
+    left: -999999px;
+}
+#main_menu ul ul li:hover ul:not(.not){
+    left: 180px;
+}
+#main_menu ul ul li:hover ul.not{
+    left: -180px;
+}
+#main_menu ul ul li{
+    display: block;
+    margin: 0;
+}
+#main_menu ul ul li a:hover{
+    color:#fff;
+    background: #333333;
+}
+#main_menu ul ul li:hover a{
+    color:#fff;
+    background: #333333;
+}
+#main_menu ul ul li:hover ul li a{
+    color:#fff;
+    background: none;
+}
+#main_menu ul ul li ul li a:hover{
+    color:#fff;
+    background: #333;
+}
+#main_menu ul ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -999999px;
+    top: 0;  
+}
+/* ===========================================
+* Hero Area
+============================================== */
+#hero_area{
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+#hero_area .inner_header{
+    overflow: hidden;
+    padding: 40px 0px 0px 0px;
+
+
+}
+.inner_header img{
+    padding-right: 20px;
+}
+.inner_header h2{
+    color: black;
+    font-size: 86px;
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 15px;
+    overflow: hidden;
+    
+}
+.inner_header p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+
+
+} 
+.inner_header a{
+    color: #ba2e1f;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    float:right;
+}
+.inner_header a:hover{
+    color: #00ffaa;
+}
+/* ===========================================
+* Work Area
+============================================== */
+
+#work_area{
+    background: #f1f1f1;
+    margin: 0;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    padding: 40px 0;
+    color: #3333333;
+    font-size: 26px;
+    font-weight: normal;
+}
+.child_work p{
+    color:#878787;
+    font-size: 14px;
+    font-weight: normal;
+}
+.child_work a{
+    color:#b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    float: right;
+    display: inline-block;
+}
+.about_area{
+    margin-left: 0;
+}
+.about_area img{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 15px;
+}
+/* =============   SERVICE AREA ============= */
+
+.child_service{
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.child_service .service_image{
+    width: 25%;
+    float: left;
+}
+.child_service .service_text{
+    width: 75%;
+    float: right;
+    
+    
+}
+.child_service .service_text h3{
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.child_service .service_text p{
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4em;
+}
+
+
+/* =========  TESTIMONIAL AREA ==============*/
+.testimonial_area{
+    margin-right: 0;
+}
+.child_testimonial{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.child_testimonial h3{
+    color: #989898;
+    font-size: 16px;
+    font-weight: bold;
+    background: url(/img/comment.png);
+    background-repeat: no-repeat;
+    line-height: 2.8em;
+    padding-left: 65px;
+}
+.child_testimonial h3 span{
+    color: #989898;
+    font-size: 16px;
+    font-weight: normal;
+}
+/* ================================================
+*=======   CONTACT   AREA ======= 
+===================================================*/
+
+#contact_area{
+    margin-top: 30px;
+}
+.child_contact{
+    width: 21.5%;
+    float: left;
+    margin-right: 40px;
+}
+
+.child_contact h2{
+    border-top: 1px solid #666666;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0 40px;
+    color:#666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.child_contact p,a{
+    color:#666;
+    font-size: 14px;
+    font-weight: normal;
+}
+.child_contact p span{
+    color:#b92d1f;
+}
+.child_contact h3{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.child_contact .last_child{
+    margin-top: 0;
+    font-size: 10px;
+    line-height: 1.4em;
+    margin-bottom: 0;
+}
+.child_contact .child_link{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d4d4d4;
+}
+.child_contact .child_link a{
+    color: #ee802f;
+    line-height: 2.3em;
+}
+.tweet_area{
+    margin-left: 0px;
+    float: left;
+}
+
+.blog_area a{
+    color: #b82c1f;
+    margin-right: 0;
+    float: right;
+}
+.blog_area .child_blog{
+    overflow: hidden;
+}
+.blog_area .child_blog p{
+    margin-top: 0;
+    line-height: 1.2em;
+}
+.form_area{
+   margin-right: 0px;
+   float: right; 
+}
+.form_area form input{
+    background: #f2f2f2;
+    border: 0px solid;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+.form_area form input[type="submit"]{
+    width: 80px;
+    color: #ba2e1f;
+    font-weight: bold;
+}
+.form_area form input[type="submit"]:hover{
+    color: #ffe600;
+    background-color: #299EE8;
+    transition: 1s;
+}
+.form_area form textarea{
+    font-family: Georgia,sans-serif;
+    padding: 5px;
+    background: #f2f2f2;
+    height: 105px;
+    resize: none;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: normal;
+    
+}
+/* ================================================
+*=======   Coppywright   AREA ======= 
+===================================================*/
+footer{
+    margin-top: 15px;
+}
+.child_footer{
+    background-color: #F2F2F2;
+    width: 100% ;
+}
+.child_footer p{
+    font-size: 12px;
+    color: #919191;
+    padding: 15px 0;
+}
+.domain{
+    margin-left: 0px;
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.templete{
+    right: 0px;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
